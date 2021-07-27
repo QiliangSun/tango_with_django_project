@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import include,path
 from rango import views
 
+app_name='rango'
+
 urlpatterns = [
 	url(r'^$', views.index, name='index'),
 	url(r'^about/', views.about, name='about'),
